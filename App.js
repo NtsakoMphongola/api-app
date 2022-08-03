@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground, TextInput, ActivityIndicator  } from 'react-native';
 import React, { useState, useCallback} from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -45,7 +45,7 @@ export default function App() {
 
         {loading && (
           <View>
-            <ActivityIndicator size={'large'} color={'#fff'} />
+            <ActivityIndicator size={'large'} color={'white'} />
           </View>
         )}
 
@@ -84,10 +84,9 @@ const styles = StyleSheet.create({
     fontSize: 19,
     fontWeight: '300',
     borderRadius: 16,
-    borderBottomColor: '#df8e00',
   },
   txtCity: {
-    color: '#fff',
+    color: 'white',
     fontSize: 40,
     fontWeight: 'bold',
   },
@@ -95,18 +94,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   txtDate: {
-    color: '#fff',
+    color: 'white',
     fontSize: 22,
     marginVertical: 10,
   },
   txtTemp: {
     fontSize: 45,
-    color: '#fff',
+    color: 'white',
     marginVertical: 10,
   },
   txtMinMax: {
     fontSize: 22,
-    color: '#fff',
+    color: 'white',
     marginVertical: 10,
     fontWeight: '500',
   },
