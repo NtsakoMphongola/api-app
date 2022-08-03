@@ -37,7 +37,7 @@ export default function App() {
       <ImageBackground source={require('./assets/bg.jpg')} resizeMode='cover' style={styles.image}>
         <View>
           <TextInput
-            placeholder="Enter city name and press return..." style={styles.textInput}
+            placeholder="Enter a city name and press return..." style={styles.textInput}
             onChangeText={text => setInput(text)} placeholderTextColor={'#000'}
             onSubmitEditing={fetchDataHandler} value={input}
           />
